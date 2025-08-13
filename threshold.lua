@@ -83,16 +83,6 @@ dlg:combobox {
 
 dlg:newrow { always = false }
 
-dlg:combobox {
-    id = "evalFuncPreset",
-    label = "Value:",
-    option = "LUMINANCE",
-    options = { "AVERAGE", "LUMINANCE", "MAX", "MID_RANGE", },
-    hexpand = false,
-}
-
-dlg:newrow { always = false }
-
 dlg:color {
     id = "darkColor",
     label = "Colors:",
@@ -104,6 +94,16 @@ dlg:color {
     id = "lightColor",
     color = Color { r = 255, g = 247, b = 213, a = 255 },
     focus = false,
+}
+
+dlg:newrow { always = false }
+
+dlg:combobox {
+    id = "evalFuncPreset",
+    label = "Value:",
+    option = "LUMINANCE",
+    options = { "AVERAGE", "LUMINANCE", "MAX", "MID_RANGE", },
+    hexpand = false,
 }
 
 dlg:newrow { always = false }
