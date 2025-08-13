@@ -2,7 +2,7 @@
 
 ![Screen Cap](screenCap.png)
 
-This is a [threshold filter](https://en.wikipedia.org/wiki/Thresholding_(image_processing)) for use with the [Aseprite](https://www.aseprite.org/) [scripting API](https://github.com/aseprite/api).
+This is a [threshold filter](https://en.wikipedia.org/wiki/Thresholding_(image_processing)) for use with the [Aseprite](https://www.aseprite.org/) [scripting API](https://github.com/aseprite/api). (The screen shot above uses David's [_The Lictors Bring to Brutus the Bodies of His Sons_](https://en.wikipedia.org/wiki/The_Lictors_Bring_to_Brutus_the_Bodies_of_His_Sons) as a test image.)
 
 ## Download
 
