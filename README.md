@@ -22,5 +22,18 @@ The series of blog posts from Craft of Coding on the [Bernsen](https://craftofco
 
 ## Examples
 
+Below is an example of the filter's various algorithms at work on a pixel art image. The sprites are from _Lufia II: Rise of the Sinistrals_, as posted on [The Spriter's Resource](https://www.spriters-resource.com/snes/lufia2/sheet/38397/).
+
+![Global](sinistralsExample1.png)
+
+Global
+
+![Sauvola](sinistralsExample2.png)
+
+Sauvola
+
+![Phansalkar](sinistralsExample3.png)
+
+Phansalkar
 
 🇹🇼 🇺🇦
