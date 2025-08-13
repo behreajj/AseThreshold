@@ -1,4 +1,4 @@
-# Aseprite Diagram Generator
+# Aseprite Threshold Filter
 
 ![Screen Cap](screenCap.png)
 
