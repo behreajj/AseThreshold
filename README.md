@@ -14,7 +14,18 @@ To use this script, open Aseprite. In the menu bar, go to `File > Scripts > Open
 
 If an error message in Aseprite's console appears, check if the script folder is on a file path that includes characters beyond ASCII, such as 'é' (e acute) or 'ö' (o umlaut).
 
-A hot key can be assigned to the script by going to `Edit > Keyboard Shortcuts`. The search input box in the top left of the shortcuts dialog can be used to locate the script by its file name
+A hot key can be assigned to the script by going to `Edit > Keyboard Shortcuts`. The search input box in the top left of the shortcuts dialog can be used to locate the script by its file name.
+
+The script edits [cel](https://aseprite.org/docs/cel) images in place. It allows you to target the `"ACTIVE"` [frame](https://aseprite.org/docs/animation/) or [layer](https://aseprite.org/docs/layers), `"ALL"` frames or layers, or those within a [timeline](https://aseprite.org/docs/timeline) `"RANGE"`. The timeline must be visible for the [range](https://aseprite.org/docs/range) target to work. The script excludes locked and hidden layers, reference layers and tile map layers. It ignores [group](https://aseprite.org/docs/layer-group/) layers within a range. It seeks out children layers for the active and all targets.
+
+The script only works for sprites in RGB [color mode](https://aseprite.org/docs/color-mode). To convert an RGB color to a grayscale value, the script offers the following formulae:
+
+* `"AVERAGE"`: (r + g + b) / 3
+* `"LUMINANCE"`: (r * 30 + g * 59 + b * 11) / 100
+* `"MAX"`: max(r, g, b)
+* `"MID_RANGE"`: (max(r, g, b) + min(r, g, b)) / 2
+
+The average algorithm is used to calculate the intensity in the HSI color representation. Maximum is the algorithm used for the value in HSV. Mid-range is for the lightness in HSL. See the Wikipedia entry on [HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) for more. The luminance calculation, a weighted average, is based on CSS and SVG [blending modes](https://www.w3.org/TR/compositing-1/#blendingnonseparable).
 
 ## Acknowledgments & References
 
