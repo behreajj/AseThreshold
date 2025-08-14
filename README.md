@@ -27,6 +27,8 @@ The script only works for sprites in RGB [color mode](https://aseprite.org/docs/
 
 The average algorithm is used to calculate the intensity in the HSI color representation. Maximum is the algorithm used for the value in HSV. Mid-range is for the lightness in HSL. See the Wikipedia entry on [HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV) for more. The luminance calculation, a weighted average, is based on CSS and SVG [blending modes](https://www.w3.org/TR/compositing-1/#blendingnonseparable).
 
+In local thresholding algorithms -- Sauvola and Phansalkar -- the step determines the size of the pixel neighborhood. For example, a step of 3 yields a neighborhood of 3 * 2 + 1, or 7.
+
 ## Acknowledgments & References
 
 The series of blog posts from Craft of Coding on the [Bernsen](https://craftofcoding.wordpress.com/2021/10/27/thresholding-algorithms-bernsen-local/), [Niblack](https://craftofcoding.wordpress.com/2021/09/30/thresholding-algorithms-niblack-local/), [Sauvola](https://craftofcoding.wordpress.com/2021/10/06/thresholding-algorithms-sauvola-local/) and [Phansalkar](https://craftofcoding.wordpress.com/2021/09/28/thresholding-algorithms-phansalkar-local/) algorithms were of great use in creating the Lua implementation.
